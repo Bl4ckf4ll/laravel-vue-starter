@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Factory;
 /** @var Factory $factory */
 $factory->define(Post::class, function (Faker $faker) {
     return [
-        'title' => $faker->words(),
-        'description' => $faker->paragraph(),
+        'title' => $faker->sentence(),
+        'content' => $faker->paragraph(),
         'image_url' => $faker->imageUrl(),
     ];
 });
