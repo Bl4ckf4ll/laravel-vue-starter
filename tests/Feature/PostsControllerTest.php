@@ -9,6 +9,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class PostsControllerTest extends TestCase
 {
     /**
+     * Index endpoint format
+     *
      * @test
      */
     public function indexShouldReturnPostsListWithFormat()
