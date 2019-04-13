@@ -1,7 +1,7 @@
 <template>
   <v-app light>
     <v-container>
-      <h1>{{ site.title }}</h1>
+      <h1>{{ title }}</h1>
       <p>
         A Laravel starter with <strong>Vue</strong> and <strong>Vuetify</strong>
       </p>
@@ -20,8 +20,8 @@
       Posts,
     },
     computed: {
-      ...mapState([
-        'site',
+      ...mapState('site', [
+        'title',
       ]),
     },
   };
