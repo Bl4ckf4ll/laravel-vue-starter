@@ -1,6 +1,6 @@
 <template>
   <v-app light>
-    <v-container text-xs-center>
+    <v-container>
       <h1>Vue App</h1>
       <p>
         A Laravel starter with <strong>Vue</strong> and <strong>Vuetify</strong>
