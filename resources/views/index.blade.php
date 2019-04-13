@@ -8,6 +8,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-<h1>Index</h1>
+<div id="app"></div>
+<script src="/js/app.js"></script>
 </body>
 </html>
