@@ -2,9 +2,7 @@
   <v-app light>
     <v-container>
       <h1>{{ title }}</h1>
-      <p>
-        A Laravel starter with <strong>Vue</strong> and <strong>Vuetify</strong>
-      </p>
+      <p v-html="description"></p>
       <Posts/>
     </v-container>
   </v-app>
@@ -22,6 +20,7 @@
     computed: {
       ...mapState('site', [
         'title',
+        'description',
       ]),
     },
   };
