@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 axios.interceptors.request.use((config) => {
-  config.baseURL = 'http://localhost/api';
+  config.baseURL = process.env.MIX_API_URL;
 
   return config;
 });
