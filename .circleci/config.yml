@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - run: sudo apt update
+      - run: sudo apt install -y sqlite3
       - run: sudo docker-php-ext-install pdo_sqlite pdo gd
       - run: composer install
       - run: npm install
