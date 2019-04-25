@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: sudo apt update
-      - run: sudo apt install -y libpng-dev
+      - run: sudo apt install -y libpng-dev sqlite
       - run: sudo docker-php-ext-install pdo pdo_sqlite gd
       - run: composer install
       - run: npm install
