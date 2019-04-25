@@ -7,8 +7,7 @@ jobs:
       - checkout
       - run: sudo apt update
       - run: sudo apt install -y libpng-dev
-      - run: sudo docker-php-ext-install pdo gd
-      - run: docker-php-ext-enable pdo_sqlite
+      - run: sudo docker-php-ext-install pdo pdo_sqlite gd
       - run: composer install
       - run: npm install
       - run: touch storage/testing.sqlite
